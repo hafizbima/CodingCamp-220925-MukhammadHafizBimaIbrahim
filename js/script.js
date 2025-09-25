@@ -1,3 +1,8 @@
-var name = "Hafiz Bima";
+// // welcome message
 
-document.getElementById("hero").innerText = `Hi ${name}, Welcome to My Website!`;
+// let visitor = prompt("Masukkan nama Anda:");
+// if (visitor && visitor.trim() !== "") {
+//     document.getElementById("nama").innerText = `Welcome ${visitor}!`;
+// } else {
+//     document.getElementById("nama").innerText = "Welcome Guest!";
+// }

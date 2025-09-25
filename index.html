@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="./style/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 <body>
     <nav>
-        <img src="revou.png" alt="logo revou">
+        <img src="logo.jpg" alt="logo revou" >
         <ul>
             <li><a href="Home">Home</a></li>
             <li><a href="Profile">Our Profile</a></li>
@@ -18,17 +19,35 @@
     </nav>
 
     <section>
-        <h1 id="hero"></h1>
+        <h1 id="nama"></h1>
         <p>ini adalah website latihan pertama</p>
     </section>
 
     <article>
-        <h1>Our Headquarter</h1>
-        <img class="rounded" src="jakarta.webp" alt="">
-        <img class="rounded" src="bandung.webp" alt="">
-        <img class="rounded" src="surabaya.webp" alt="">
+        <h1>My Project</h1>
+        <div class="project">
+            <img class="rounded" src="jakarta.webp" alt="">
+            <img class="rounded" src="bandung.webp" alt="">
+            <img class="rounded" src="surabaya.webp" alt="">
+        </div>
     </article>
 
+    <div class="message">
+        <h1>Contact Me</h1>
+        <form action="">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name.."><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email.."><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <p>Created by Hafiz Bima</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
