@@ -11,39 +11,48 @@
     <nav>
         <img src="logo.jpg" alt="logo revou" >
         <ul>
-            <li><a href="Home">Home</a></li>
-            <li><a href="Profile">Our Profile</a></li>
-            <li><a href="Portfolio">Portofolio</a></li>
-            <li><a href="Contact">Message Us</a></li>
+            <li><a href="#section">Home</a></li>
+            <li><a href="profile">My Profile</a></li>
+            <li><a href="#project-title">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section>
+    <section id="section">
         <h1 id="nama"></h1>
-        <p>ini adalah website latihan pertama</p>
+        <h4>ini adalah website portofolioku</h4>
     </section>
 
-    <article>
+    <div class="project-title" id="project-title">
         <h1>My Project</h1>
         <div class="project">
             <img class="rounded" src="jakarta.webp" alt="">
             <img class="rounded" src="bandung.webp" alt="">
             <img class="rounded" src="surabaya.webp" alt="">
         </div>
-    </article>
-
-    <div class="message">
-        <h1>Contact Me</h1>
-        <form action="">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Your name.."><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Your email.."><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
     </div>
+
+    <div class="contact" id="contact">
+        <div class="message">
+            <h1>Contact Me</h1>
+            <form action="">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                <label for="email">Jenis Kelamin:</label><br>
+                <input type="radio" placeholder="Perempuan">Perempuan <br>
+                <input type="radio" placeholder="Laki-laki">Laki-laki <br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="output">
+            <h1>Your Message</h1>
+            <div class="pesan" id="hasil"></div>
+        </div>
+    </div>
+    
 
     <footer>
         <p>Created by Hafiz Bima</p>
