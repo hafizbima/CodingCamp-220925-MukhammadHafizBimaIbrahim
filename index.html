@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="./assets/logo.jpg" alt="logo revou" >
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#section">My Profile</a></li>
+            <li><a href="#project-title">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="section">
+        <div class="greet">
+            <h1 id="nama"></h1>
+            <h4>This is my portfolio</h4>
+        </div>
+        <img class="hero" src="./assets/hero.png" alt="">
+    </section>
+
+    <div class="project-title" id="project-title">
+        <h1>My Project</h1>
+        <div class="project">
+            <a href="https://github.com/FurniScan-C241-PS170"><img class="rounded" src="./assets/logo-FurniScan.jpeg" alt=""></a>
+            <a href="https://www.figma.com/proto/DObjojSzpslgTNPTdJlwge/Career-Conected?page-id=1%3A3&node-id=183-106&p=f&viewport=503%2C172%2C0.13&t=kxcRiMTONVDHVoqd-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=183%3A14&show-proto-sidebar=1"><img class="rounded" src="./assets/logo-CareerConnect.jpg" alt=""></a>
+            <a href=""><img class="rounded" src="./assets/logo-QResto.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="message">
+            <h1>Contact Me</h1>
+            <form action="">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                <label for="date">Tanggal Lahir:</label><br>
+                <input type="date" name="date" id="date"><br>
+                <label for="gender">Jenis Kelamin:</label><br>
+                <input type="radio" name="gender" value="Perempuan" id="perempuan"><label for="perempuan">Perempuan</label>
+                <input type="radio" name="gender" value="Laki-laki" id="laki"><label for="laki">Laki-laki</label><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="output">
+            <h1>Your Message</h1>
+            <div class="pesan" id="hasil"></div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>Created by Hafiz Bima</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
