@@ -254,3 +254,23 @@ footer {
         font-size: 1em;
     }
 }
+
+@media (max-width: 900px) {
+    section, .project-title, .output, .message {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 16px;
+    }
+    .project {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .rounded {
+        width: 180px;
+        height: 180px;
+    }
+}
